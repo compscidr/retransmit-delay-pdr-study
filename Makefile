@@ -7,3 +7,5 @@ server: server.cc
 	g++ server.cc -lboost_system -lpthread -o server
 clean:
 	rm -rf client server
+data:
+	dd if=/dev/urandom of=random.bin bs=1048576 count=100
